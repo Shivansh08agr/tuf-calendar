@@ -7,6 +7,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+// for seo
 export const metadata: Metadata = {
   title: "Interactive Wall Calendar",
   description: "A high-end, responsive interactive wall calendar",

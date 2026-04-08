@@ -76,7 +76,7 @@ export function Calendar() {
         <ExportImport onExport={exportData} onImport={importData} />
       </div>
 
-      {/* ---------------- RIGHT PANEL: DRAGGABLE DATA SCHEDULE ---------------- */}
+      {/* RIGHT PANEL: DRAGGABLE PART */}
       <div className="w-full lg:w-1/3 flex flex-col h-[500px] sm:h-[600px] lg:h-auto min-h-0 shrink-0 lg:shrink">
         <SchedulePanel
           selectedDate={selectedDateForNote}

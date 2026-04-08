@@ -238,7 +238,6 @@ export function SchedulePanel({
   const rawTasks = targetDateStr ? (schedule[targetDateStr] || []) : [];
   
   // --- SEGREGATION LAYER ---
-  // Extracts generic nested payloads into two distinct buckets mapping identically to their component capabilities
   const timedTasks = rawTasks.filter(t => t.type !== "note").sort((a, b) => a.time.localeCompare(b.time));
   const priorityNotes = rawTasks.filter(t => t.type === "note").sort((a, b) => a.order - b.order);
 
