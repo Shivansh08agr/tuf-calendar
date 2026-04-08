@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Productivity Dashboard
+
+A modern, intelligent daily planner featuring glassmorphism design, smooth interactions, and powerful task management.
+
+---
+
+> UI inspiration taken from [tuf+](https://takeuforward.org/)
+
+---
+
+## Features
+
+### Core Dashboard
+
+- **Fluid Calendar Grid**  
+  Fully dynamic calendar that adapts to each month without heavy third-party libraries.
+
+- **Glassmorphism UI**  
+  Translucent panels, backdrop blur, and smooth hover interactions.
+
+- **Dynamic Seasonal Backgrounds**  
+  Background changes automatically based on the current month.
+
+---
+
+### Task & Priority Management
+
+- **Timed Tasks**  
+  Schedule tasks with automatic chronological sorting and quick completion toggles.
+
+- **Draggable Priority Notes**  
+  Flexible notes with drag-and-drop reordering.
+
+- **Multi-Day Bulk Sync**  
+  Duplicate tasks or notes across multiple selected dates.
+
+---
+
+### Tracking & Portability
+
+- **Streak Tracking**  
+  Track consistency by completing all daily tasks.
+
+- **Data Import/Export**  
+  Export or import schedules using `.csv`.
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|-----------|--------|
+| Next.js (App Router) | Modern frontend architecture |
+| Tailwind CSS | Styling and layout |
+| Framer Motion | Animations and drag interactions |
+| Custom Hooks (`useCalendar.ts`) | State management with localStorage |
+| Flexbox | Responsive layout system |
+
+---
+
+## Demo
+
+Demo video: *(add your link here)*  
+Live app: *(add Vercel link here)*
+
+---
+
+## Screenshots
+
+![Dashboard Screenshot](./public/screenshot.png)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v18 or higher)
+
+---
+
+### Installation
+
+```bash
+npm install
+```
+
+---
+
+### Run the App
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Open in Browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+http://localhost:3000
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+/app        # App router pages
+/components # UI components
+/hooks      # Custom hooks
+/utils      # Helper functions
+/public     # Static assets
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Future Improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Cloud sync (Firebase / Supabase)
+- Authentication
+- Multi-device sync
+- AI-based task suggestions
+- Mobile optimization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Contributing
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## License
+
+MIT License
