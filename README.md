@@ -2,10 +2,21 @@
 
 A modern, intelligent daily planner featuring glassmorphism design, smooth interactions, and powerful task management.
 
+
+
+## Design Approach
+
+While the challenge suggested a wall calendar aesthetic, I chose to interpret it in a modern, product-oriented way inspired by TUF’s revamped UI.
+
+Instead of replicating a literal physical calendar, I focused on:
+- Maintaining strong visual hierarchy (hero section + calendar + notes)
+- Ensuring usability and responsiveness across devices
+- Delivering a clean, scalable interface aligned with real-world product design
+
+This approach balances the spirit of the prompt with practical user experience considerations.
+
 ---
-
 > UI inspiration taken from [tuf+](https://takeuforward.org/)
-
 ---
 
 ## Features
@@ -25,8 +36,7 @@ A modern, intelligent daily planner featuring glassmorphism design, smooth inter
 
 ### Task & Priority Management
 
-- **Timed Tasks**  
-  Schedule tasks with automatic chronological sorting and quick completion toggles.
+- **Timed Tasks** – enables structured daily planning with automatic chronological ordering.
 
 - **Draggable Priority Notes**  
   Flexible notes with drag-and-drop reordering.
@@ -58,10 +68,17 @@ A modern, intelligent daily planner featuring glassmorphism design, smooth inter
 
 ---
 
+## Architecture Notes
+
+- Calendar logic is abstracted into a custom hook (`useCalendar.ts`)
+- Local state is persisted using localStorage for offline-first usage
+- Component structure is modular for scalability
+
 ## Demo
 
-Demo video: *(add your link here)*  
-Live app: *(add Vercel link here)*
+Demo video: [Demo Video](https://drive.google.com/file/d/1xnTNqLlr5w_hb4yeKQbX6234Lg_eRdiv/view?usp=sharing) 
+
+Live app: [Live App](https://tuf-calendar-shivansh-agrawal.vercel.app/)
 
 ---
 
@@ -70,6 +87,14 @@ Live app: *(add Vercel link here)*
 ![Dashboard Screenshot](./public/screenshot.png)
 
 ---
+
+## Challenges Faced
+
+- **Balancing Aesthetics with Usability**  
+  Interpreting the "wall calendar" inspiration while ensuring the interface remained intuitive, responsive, and practical for real-world usage.
+
+- **Feature Ideation with Real-World Usefulness**  
+  Deciding which features to include based on actual productivity needs—such as priority notes, timed tasks, multi-date selection, and calendar import/export—while avoiding unnecessary complexity.
 
 ## Getting Started
 
@@ -128,9 +153,3 @@ http://localhost:3000
 ## Contributing
 
 Feel free to fork the repository and submit a pull request.
-
----
-
-## License
-
-MIT License
